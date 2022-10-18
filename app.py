@@ -31,7 +31,7 @@ def get_responce_from_model_server(msg):
     predictions = json.loads(json_response.text)['predictions']
     return predictions
 
-# create a dictionory of predection and class name
+# create a dictionory of prediction and class name
 
 
 def get_prediction_dict(predictions):
@@ -54,7 +54,7 @@ def filter_predictions(predictions, threshold):
 
 
 def get_text_from_dict(dict):
-    text = "Predected Genres are "
+    text = "Predicted Genres are "
     for key in dict:
         text += key + ", "
     return text
