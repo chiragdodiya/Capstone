@@ -16,7 +16,7 @@ tenorflow_url = os.environ.get(
     'TENSORFLOW_URL', 'http://localhost:8502/v1/models/multilable_model:predict')
 
 predict_threshold = os.environ.get(
-    'pred_threshold', "0.2")
+    'pred_threshold', "0.04")
 
 predict_threshold = float(predict_threshold)
 # Get responce from tensorflow model server
